@@ -1,0 +1,23 @@
+{
+  "name": "iyarkai-kavalan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Iyarkai Kavalan dashboard with MIT-licensed MIRA YOLO11n waste detection and multi-image batch analysis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "setup-model": "node scripts/download-model.js",
+    "prestart": "node scripts/download-model.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "multer": "^2.0.2",
+    "onnxruntime-node": "^1.22.0",
+    "sharp": "^0.34.4"
+  }
+}
